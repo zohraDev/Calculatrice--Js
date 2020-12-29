@@ -17,11 +17,11 @@ do{
             + '5- Division.\n\n');
         
 
-            if(choix != 1 && choix != 2 && choix != 3){
+            if(choix != 1 && choix != 2 && choix != 3 && (choix != 4) ){
 
             alert("Erreur de saisi dans le choix de l\'opération");}
 
-    }while ( (choix != 1) && (choix != 2) && (choix != 3) );
+    }while ( (choix != 1) && (choix != 2) && (choix != 3)&& (choix != 4)  );
 
     /*--------------------------------------- */ 
 
