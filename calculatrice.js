@@ -58,27 +58,31 @@ do{
     }while(isNaN(nombre2));
 
 
+    try{
 
-    switch (choix){
-        case '1': {
-            alert('La somme de ' +nombre1+' et ' +nombre2+' est égale à '+(nombre1+nombre2)+'.');
-            break;
-        }
-        case '2' :{
-            alert('La différence entre ' +nombre1+' et ' +nombre2+' est égale à '+(nombre1-nombre2)+'.');
-            break;
-        }
-        case '3' :{
-            alert('Le produit de ' +nombre1+' par ' +nombre2+' est égale à '+(nombre1*nombre2))+'.';
-            break;
-        }
-        case '4': {
+        switch (choix){
 
-            alert('Le quotient de' +nombre1+' par ' +nombre2+' est égale à '+(nombre1/nombre2)+'.');
-            break;
-        }   
+            case '1': {
+                alert('La somme de ' +nombre1+' et ' +nombre2+' est égale à '+(nombre1+nombre2)+'.');
+                break;
+            }
+            case '2' :{
+                alert('La différence entre ' +nombre1+' et ' +nombre2+' est égale à '+(nombre1-nombre2)+'.');
+                break;
+            }
+            case '3' :{
+                alert('Le produit de ' +nombre1+' par ' +nombre2+' est égale à '+(nombre1*nombre2))+'.';
+                break;
+            }
+            case '4': {
 
+                alert('Le quotient de' +nombre1+' par ' +nombre2+' est égale à '+(nombre1/nombre2)+'.');
+                break;}  
 
-
+            default : {throw new Error('Une erreur est survenue');}   
+                } 
+    } catch(error){
+        alert(error);
     }           
+    
 }while(confirm('Veulez-vous continuer'));
